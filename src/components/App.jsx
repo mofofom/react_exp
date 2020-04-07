@@ -22,7 +22,7 @@ class App extends React.Component {
   }
 
   addMovieToWillWatch = movie => {
-    const updateMoviesWillWatch = [...this.state.moviesWillWatch];
+    const updateMoviesWillWatch = [...this.state.moviesWillWatch, movie];
     this.setState({moviesWillWatch: updateMoviesWillWatch});
     }
 
